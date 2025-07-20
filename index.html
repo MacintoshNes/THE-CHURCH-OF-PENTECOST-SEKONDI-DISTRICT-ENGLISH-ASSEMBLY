@@ -1,283 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>THE CHURCH OF PENTECOST - SEKONDI ENGLISH ASSEMBLY</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    <meta charset="utf-8">
+    <title>Forster & Sarah - Marriage ceremony 2025</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-    body {
-      background-image: url('https://national.cc/wp-content/uploads/2023/08/footer-background.png');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: #fff;
-      font-size: 16px;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-      background: rgba(0, 0, 0, 0.6);
-      text-align: center;
-      width: 100%;
-    }
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
 
-    @media(min-width: 768px) {
-      header {
-        flex-direction: row;
-        justify-content: flex-start;
-        text-align: left;
-      }
-    }
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    header .logo {
-      height: 80px;
-      width: 80px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    }
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    @media(min-width: 768px) {
-      header .logo {
-        margin-bottom: 0;
-        margin-right: 1.5rem;
-      }
-    }
-
-    header h1 {
-      font-size: 1.8rem;
-      color: #fff;
-    }
-
-    @media(min-width: 768px) {
-      header h1 {
-        font-size: 2.5rem;
-      }
-    }
-
-    header p {
-      font-size: 1rem;
-      color: #ccc;
-    }
-
-    nav {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 1rem;
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 0.9rem;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      transition: background-color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #ff7f50;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 1rem;
-      background: rgba(0, 0, 0, 0.5);
-    }
-
-    .hero h2 {
-      font-size: 2.2rem;
-    }
-
-    @media(min-width: 768px) {
-      .hero h2 {
-        font-size: 3.5rem;
-      }
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .section {
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-
-    .section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #ff7f50;
-    }
-
-    .section p {
-      font-size: 1rem;
-      color: #ddd;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    footer {
-      background-color: rgba(0, 0, 0, 0.7);
-      color: #fff;
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-
-    footer small {
-      display: block;
-      margin-top: 0.5rem;
-      font-size: 0.8rem;
-    }
-
-    .map-container {
-      text-align: center;
-      padding: 3rem 1rem;
-      display: none;
-    }
-
-    .map-container iframe {
-      width: 100%;
-      max-width: 100%;
-      height: 400px;
-      border: none;
-    }
-
-    .home-button {
-      background-color: #ff7f50;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      margin-top: 1rem;
-      display: inline-block;
-    }
-
-    .home-button:hover {
-      background-color: #e06f33;
-    }
-
-    .whatsapp-help {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 50px;
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-      text-decoration: none;
-      z-index: 999;
-    }
-
-    .whatsapp-help:hover {
-      background-color: #128c7e;
-    }
-
-    .whatsapp-help img {
-      height: 24px;
-      width: 24px;
-    }
-  </style>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
 
-  <header>
-    <img src="https://th.bing.com/th/id/OIP.pnOv_cPaXzdWuEm_0dogMQHaEf?rs=1&pid=ImgDetMain" alt="Church Logo" class="logo">
-    <div>
-      <h1>THE CHURCH OF PENTECOST - SEKONDI ENGLISH ASSEMBLY</h1>
-      <p>Located in Sekondi-Zongo Junction | A Place of Worship, Growth, and Fellowship</p>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Forster <span class="text-primary">&</span> Sarah</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#story" class="nav-item nav-link">Story</a>
+                <a href="#gallery" class="nav-item nav-link">Gallery</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Forster <span class="text-primary">&</span> Sarah</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#family" class="nav-item nav-link">Family</a>
+                <a href="#event" class="nav-item nav-link">Event</a>
+                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Forster & Sarah</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Congratulations to US. We're married. Thank You All</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/IlBDc8pC8VU?si=W5OJrRcFlUKY82ES" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Forster & Sarah</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Congratulations to US. We're married. Thank You All</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/IlBDc8pC8VU?si=W5OJrRcFlUKY82ES" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a>
+        </div>
     </div>
-  </header>
+    <!-- Carousel End -->
 
-  <nav>
-    <a href="#">HOME</a>
-    <a href="#about">ABOUT US</a>
-    <a href="#leadership">LEADERSHIP</a>
-    <a href="#ministries">MINISTRIES</a>
-    <a href="#missions">MISSIONS</a>
-    <a href="#media">MEDIA</a>
-    <a href="#facebook">FACEBOOK</a>
-    <a href="#contact">CONTACT US</a>
-  </nav>
 
-  <section class="hero">
-    <h2>Experience the Presence of God</h2>
-    <p>Join us in spirit-filled worship and a strong family of believers</p>
-  </section>
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
 
-  <section class="section" id="about">
-    <h3>About Us</h3>
-    <p>We are a thriving community of believers committed to spreading the gospel and serving with love, faith, and excellence.</p>
-  </section>
 
-  <section class="section" id="services">
-    <h3>Our Services</h3>
-    <p>We meet every Sunday and throughout the week for worship, teaching, and prayer. All are welcome to grow with us.</p>
-  </section>
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">About</h6>
+                <h1 class="font-secondary display-4">Groom & Bride</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                <div class="col-md-6 p-0 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">The Groom</h3>
+                        <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Forster</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-0 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">The Bride</h3>
+                        <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Sarah</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
 
-  <section class="section" id="events">
-    <h3>Upcoming Events</h3>
-    <p>Check out our calendar for upcoming church programs, youth events, and community outreach.</p>
-  </section>
 
-  <section class="section" id="contact">
-    <h3>Contact Us</h3>
-    <p>Email: info@copsekondienglish.org | Phone: +233 597586898</p>
-  </section>
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6>
+                <h1 class="font-secondary display-4">Our Love Story</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">First Meet</h4>
+                            <p class="text-uppercase mb-2">01 Jan 2050</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">First Date</h4>
+                            <p class="text-uppercase mb-2">01 Jan 2050</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-3.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Proposal</h4>
+                            <p class="text-uppercase mb-2">01 Jan 2050</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Enagagement</h4>
+                            <p class="text-uppercase mb-2">01 Jan 2050</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
 
-  <footer>
-    <p>&copy; 2025 THE CHURCH OF PENTECOST - SEKONDI ENGLISH ASSEMBLY. All rights reserved.</p>
-    <small>Website designed by Tambo Forster, 2025</small>
-  </footer>
 
-  <div id="map-section" class="map-container">
-    <h3>Our Location</h3>
-    <iframe src="https://maps.app.goo.gl/8Nzgia2q1W1vnsRD6" loading="lazy"></iframe>
-    <a href="#" class="home-button" onclick="goHome()">Back to Home</a>
-  </div>
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 90px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
+            <h1 class="font-secondary display-4 text-white">Our Photo Gallery</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
+                <a href="img/gallery-2.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
+                <a href="img/gallery-5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+		<div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-7.jpg" alt="">
+                <a href="img/gallery-7.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+	<div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-8.jpg" alt="">
+                <a href="img/gallery-8.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
 
-  <a href="https://api.whatsapp.com/send/?phone=233597586898&text=Hi!%20Macintosh%0A%0A" class="whatsapp-help" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
-    Contact Us on WhatsApp
-  </a>
 
-  <script>
-    function showMap() {
-      document.getElementById('map-section').style.display = 'block';
-      document.body.style.overflow = 'hidden';
-    }
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="event">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Event</h6>
+                <h1 class="font-secondary display-4">Our Wedding Event</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Clita ipsum aliquyam dolor diam dolores elitr nonumy. Rebum sea vero ipsum eirmod tempor kasd. Diam amet lorem erat eos sit lorem elitr justo</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 border-right border-primary">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <img class="img-fluid mb-4" src="img/event-1.jpg" alt="">
+                        <h4 class="mb-3">The Reception</h4>
+                        <p class="mb-2">123 Street, New York, USA</p>
+                        <p class="mb-0">12:00AM - 13:00PM</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+                        <img class="img-fluid mb-4" src="img/event-2.jpg" alt="">
+                        <h4 class="mb-3">Wedding Party</h4>
+                        <p class="mb-2">123 Street, New York, USA</p>
+                        <p class="mb-0">12:00AM - 13:00PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event End -->
 
-    function goHome() {
-      document.getElementById('map-section').style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-  </script>
 
+    <!-- Friends & Family Start -->
+    <div class="container-fluid py-5" id="family">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Friends & Family</h6>
+                <h1 class="font-secondary display-4">Groomsmen & Bridesmaid</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">Groomsmen</li>
+                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">Bridesmaid</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/groomsmen-1.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Isaac Mintah</h4>
+                            <p class="text-uppercase">Groom's Brother</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/groomsmen-2.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-2.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/groomsmen-3.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-3.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Friends & Family End -->
+
+
+    <!-- RSVP Start -->
+    <div class="container-fluid py-5" id="rsvp">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+                <h1 class="font-secondary display-4">Join Our Party</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Name"/>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Email"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>Number of Guest</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>I'm Attending</option>
+                                        <option>All Events</option>
+                                        <option>Wedding Party</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Message" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RSVP End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Thank You</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center py-2">
+                <p class="text-white" href="#">sucessdeartambo@gmail.com</p>
+                <span class="px-3">|</span>
+                <p class="text-white" href="#">0597586898</p>
+            </div>
+            <p class="m-0">&copy; <a class="text-primary" href="#">2025</a>. Designed by <a class="text-primary" href="Designed by Tambo Forster Mawuli NestorMacintosh">Nesmac_S Tech Press Consult</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
